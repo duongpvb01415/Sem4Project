@@ -1,0 +1,223 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="contact" class="biz.da.controll.ContactAction">
+            <result name="success">contact.jsp</result>
+            <result name="error">contact.jsp</result>
+        </action>
+        <action name="editcontact" class="biz.da.controll.ContactAction">
+            <result name="success" type="redirect">contact</result>
+            <result name="error" type="redirect">contact</result>
+        </action>
+        <action name="deleteComment" class="biz.da.controll.ContactAction">
+            <result name="success" type="redirect">contact</result>
+            <result name="error" type="redirect">contact</result>
+        </action>
+        <action name="commit" class="biz.da.controll.ContactAction">
+            <result name="success">showItemp.jsp</result>
+            <result name="error">showItemp.jsp</result>
+        </action>
+        <action name="faq" class="biz.da.controll.FaqAction">
+            <result name="success">faq.jsp</result>
+            <result name="error">faq.jsp</result>
+        </action>
+        <action name="addFaq" class="biz.da.controll.FaqAction">
+            <result name="success">faq.jsp</result>
+            <result name="error">faq.jsp</result>
+        </action>
+        <action name="addNews" class="biz.da.controll.FaqAction">
+            <result name="success">faq.jsp</result>
+            <result name="error">faq.jsp</result>
+        </action>
+        <action name="itempNews" class="biz.da.controll.FaqAction">
+            <result name="success">showItemp.jsp</result>
+            <result name="error">showItemp.jsp</result>
+        </action>
+        <action name="services" class="biz.da.controll.ServicesAction">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+        <action name="editHome" class="biz.da.controll.ServicesAction">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+        
+        <action name="addDistrict" class="biz.da.controll.ServicesAction">
+            <result name="success">showItemp.jsp</result>
+            <result name="error">showItemp.jsp</result>
+        </action>
+        <action name="addDic" class="biz.da.controll.ServicesAction">
+            <result name="success">showItemp.jsp</result>
+            <result name="error">showItemp.jsp</result>
+        </action>
+        <action name="addCategory" class="biz.da.controll.CategoryAction">
+            <result name="success">showItemp.jsp</result>
+            <result name="error">showItemp.jsp</result>
+        </action>
+        <action name="deleteDis" class="biz.da.controll.ServicesAction">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+            <action name="deleteCategory" class="biz.da.controll.ServicesAction">
+            <result name="success" type="redirect">services</result>
+            <result name="error" type="redirect">services</result>
+        </action>
+        <action name="addService" class="biz.da.controll.ServicesAction">
+            <result name="success" type="redirect">services</result>
+            <result name="error" type="redirect">addService?pub=3</result>
+        </action>
+        <action name="users" class="biz.da.controll.UserAction">
+            <result name="success">users.jsp</result>
+            <result name="error">users.jsp</result>
+        </action>
+        <action name="addUser" class="biz.da.controll.UserAction">
+            <result name="success" type="redirect">users</result>
+            <result name="error" type="redirect">users?adduse=1</result>
+        </action>
+        <action name="editUser" class="biz.da.controll.UserAction">
+            <result name="success" type="redirect">users</result>
+            <result name="error" type="redirect">users?adduse=1</result>
+        </action>
+        <action name="cpProject" class="biz.da.controll.UserAction">
+            <result name="success">users.jsp</result>
+            <result name="error">users.jsp</result>
+        </action>
+        <action name="cpabout" class="biz.da.controll.HomeAction">
+            <result name="success">about.jsp</result>
+            <result name="error">about.jsp</result>
+        </action>
+        <action name="homeedit" class="biz.da.controll.HomeAction">
+            <result name="success">about.jsp</result>
+            <result name="error">about.jsp</result>
+        </action>
+        <action name="addAbout" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=2</result>
+            <result name="error" type="redirect">homeedit?home=5</result>
+        </action>
+        <action name="rootUpload" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=6</result>
+            <result name="error" type="redirect">homeedit?home=6</result>
+        </action>
+        <action name="uploadslide" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=3</result>
+            <result name="error" type="redirect">homeedit?home=3</result>
+        </action>
+        <action name="deleteSlide" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=3</result>
+            <result name="error" type="redirect">homeedit?home=3</result>
+        </action>
+        <action name="deleteLogo" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=4</result>
+            <result name="error" type="redirect">homeedit?home=4</result>
+        </action>
+        <action name="deleteAbout" class="biz.da.controll.HomeAction">
+            <result name="success" type="redirect">homeedit?home=2</result>
+            <result name="error" type="redirect">homeedit?home=2</result>
+        </action>
+        <action name="home" class="ui.da.loading.HomeResult">
+            <result name="success">index.jsp</result>
+            <result name="error">index.jsp</result>
+        </action>
+        <action name="about" class="ui.da.loading.HomeResult">
+            <result name="success">about.jsp</result>
+            <result name="error">about.jsp</result>
+        </action>
+        <action name="contacts" class="ui.da.loading.HomeResult">
+            <result name="success">contact.jsp</result>
+            <result name="error">contact.jsp</result>
+        </action>
+        <action name="faqs" class="ui.da.loading.HomeResult">
+            <result name="success">faq.jsp</result>
+            <result name="error">faq.jsp</result>
+        </action>
+        <action name="loging" class="ui.da.loading.HomeResult">
+            <result name="success" type="redirect">user</result>
+            <result name="error">login.jsp</result>
+        </action>
+        <action name="Logout" class="biz.da.controll.LogoutAction">
+            <result name="success" type="redirect">home</result>
+            <result name="error" type="redirect">home</result>
+        </action>
+        <action name="checkLogin" class="biz.da.controll.LoginsAction">
+            <result name="success" type="redirect">loging</result>
+            <result name="error" type="redirect">loging</result>
+        </action>
+        <action name="cart" class="biz.da.controll.CartAction">
+            <result name="success">cart.jsp</result>
+            <result name="error">cart.jsp</result>
+        </action>
+        
+        <action name="servicesClient" class="ui.da.loading.HomeResult">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+        <action name="category" class="ui.da.loading.HomeResult">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+         <action name="group" class="ui.da.loading.HomeResult">
+            <result name="success">services.jsp</result>
+            <result name="error">services.jsp</result>
+        </action>
+        <action name="addCart" class="biz.da.controll.CartAction">
+            <result name="success" type="redirect">cart</result>
+            <result name="error" type="redirect">
+                <param name="location">servicesClient</param>
+                <param name="idService">${id_service}</param>
+            </result>
+        </action>
+        <action name="delService" class="biz.da.controll.CartAction">
+            <result name="success" type="redirect">cart</result>
+            <result name="error" type="redirect">cart</result>
+        </action>
+        <action name="delCart" class="biz.da.controll.CartAction">
+            <result name="success">proccess.jsp</result>
+            <result name="error">proccess.jsp</result>
+        </action>
+        <action name="project" class="biz.da.controll.ProjectAction">
+            <result name="success"  type="redirect">cartproc</result>
+            <result name="error" type="redirect">cartproc</result>
+        </action>
+        <action name="cartproc" class="biz.da.controll.CartAction">
+            <result name="success">proccess.jsp</result>
+            <result name="error">proccess.jsp</result>
+        </action>
+        <action name="verify" class="biz.da.controll.CartAction">
+            <result name="success" type="redirect">user</result>
+            <result name="error" type="redirect">user</result>
+        </action>
+        <action name="user" class="biz.da.controll.CartAction">
+            <result name="success">login.jsp</result>
+            <result name="error" >login.jsp</result>
+        </action>
+        <action name="statusCancel" class="biz.da.controll.CartAction">
+            <result name="success" type="redirect">user</result>
+            <result name="error" type="redirect">user</result>
+        </action>
+        <action name="send" class="biz.da.controll.ContactSend">
+            <result name="success" type="redirect">info</result>
+            <result name="error" type="redirect">contacts</result>
+        </action>
+        <action name="info" class="ui.da.loading.HomeResult">
+            <result name="success">sendSuccess.jsp</result>
+            <result name="error" >sendSuccess.jsp</result>
+        </action>
+        <action name="totalproject" class="ui.da.loading.ProjectShow">
+            <result name="success">project.jsp</result>
+            <result name="error" >project.jsp</result>
+        </action>
+        <action name="conmentProject" class="biz.da.controll.CartAction">
+            <result name="success">login.jsp</result>
+            <result name="error" >login.jsp</result>
+        </action>
+        <action name="news" class="ui.da.loading.HomeResult">
+            <result name="success">faq.jsp</result>
+            <result name="error">faq.jsp</result>
+        </action>
+
+    </package>
+</struts>
